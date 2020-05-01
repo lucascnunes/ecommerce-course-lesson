@@ -12,7 +12,6 @@ import SignInPage from "./pages/SignIn";
 import "./App.css";
 
 import { setCurrentUser } from "./store/user/actions";
-import SignIn from "./components/SignIn";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
