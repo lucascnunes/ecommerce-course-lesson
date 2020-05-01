@@ -4,10 +4,10 @@ import Categories from "../../components/Categories";
 
 import "./styles.sass";
 
-const HomePage = () => (
+const Home = () => (
   <div className="homepage">
     <Categories />
   </div>
 );
 
-export default HomePage;
+export default Home;

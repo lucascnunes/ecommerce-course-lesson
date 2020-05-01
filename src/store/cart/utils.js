@@ -23,5 +23,5 @@ export const removeItemToCart = (cartItems, cartItemToRemove) => {
         : item
     );
   }
-  return [...cartItems, { ...cartItemToRemove, quantity: 1 }];
+  return [...cartItems];
 };
