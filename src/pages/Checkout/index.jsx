@@ -4,6 +4,8 @@ import { createStructuredSelector } from "reselect";
 
 import { selectCartItems, selectCartTotal } from "../../store/cart/selectors";
 
+import CheckoutItem from "../../components/CheckoutItem";
+
 import "./styles.sass";
 
 const Checkout = ({ cartItems, total }) => (
@@ -25,7 +27,9 @@ const Checkout = ({ cartItems, total }) => (
         <span>Remove</span>
       </div>
     </div>
-    {cartItems.map((cartItem) => cartItem.name)}
+    {cartItems.map((cartItem) => (
+      <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+    ))}
     <div className="total">
       <span>Total: ${total}</span>
     </div>
